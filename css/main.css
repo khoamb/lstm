@@ -1,0 +1,126 @@
+html { /*selecting the predefined elment: html*/
+  font-size: 16px; /*set root fontsize*/
+}
+
+h2, h3 { /*select h2 & h3 element*/
+  font-weight: bold; /*make all text in h3 bold*/
+}
+
+.container { /*selecting the user-defined class: container*/
+  width: 90%; /*set width of container to cover 90% of the page*/
+  margin: auto; /*to center the container*/
+}
+
+.flex { /*selecting flex class to to create a flex box*/
+  display: flex; /*diplay = how to display the element, flex = keyword to make the box flexible*/
+  /*the flex box only make its children flexible, not children of those children*/
+}
+
+header {
+  background-image: url("../images/banner.jpg"); /*link background image from local folder*/
+  background-size: cover; /*set background filled */
+  background-repeat: no-repeat; /*set background no tile*/
+  background-position: center top; /*set background center top*/
+  height: 50rem; /*rem = root element fontsize, em = parent element fontsize, 1 rem = 16px in this case*/
+}
+
+.flex.container { /*selecting all elements with flex & container classes*/
+  justify-content: space-between; /*justify = align items horizontally, space = push child elements towards border of container*/
+  align-items: center; /*align = align items vertically, center = set the row to have equal spacing top and bottom*/
+  /*align-content is for aligning multiple rows, it has same properties as justify-content*/
+}
+
+.name { /*select .name box, in this case we choose it to hold name and logo*/
+  align-items: center; /*align logo and name center from top and bottom*/
+}
+
+.name img { /*select img element in .name class*/
+  width: 4rem; /*change width of logo, this changes height also because ratio is kept*/
+  margin: 2rem 1rem; /*1st value is t op & bottom, 2nd value is right & left spacing*/
+}
+
+.name h3 { /*select all h3 inside .name class to change text color and size (this is the box for logo and name)*/
+  color: white;
+  font-size: 2rem;
+}
+
+ul li {
+  margin: 2rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.banner-text {
+  width: 50%; /*covers 50% of the parent container, which is 90% of the entire page*/
+}
+
+.banner-text h1 { /*select banner text portion of the webpage*/
+  color: white;
+  font-size: 4rem;
+  margin: 8rem 1rem 3rem 1rem; /*clockwise starting at the top margin*/
+}
+
+.banner-text a { /*select Get started button inside banner text, a = link*/
+  display: block; /*block takes up the whole line for 1 element, but changing dimension is allowed, inline cannot, but can have multiple elements on a line*/
+  font-size: 1.51rem;
+  color: white;
+  width: 65%;
+  background-color: #4e8c9b; /*hex value for teal*/
+  text-decoration: none; /*get rid of underline*/
+  text-align: center; /*align text to center*/
+  padding: 1rem; /*spacing between content and border of an element, margin is spacing between elements*/
+  border-radius: 0.5rem; /*to round the corners of the border*/
+  margin-left: 1rem; /*set only left margin*/
+}
+
+.banner-text a:hover { /*when hover over this link, this fucntion triggers (swap text & background colors)*/
+  color: #4e8c9b;
+  background-color: white;
+}
+
+main h2 { /*select h2 in main (sign up or log in to:)*/
+  font-size: 4rem; /*make text bigger*/
+  text-align: center; /*center text*/
+  margin: 5rem auto; /*5rem top & bottom, left & right equal*/
+}
+
+.flex-item { /*select flex-item label*/
+  margin: 0 1rem;
+  flex-direction: column; /*change all contents inside .flex-item to column*/
+  align-items: center; /*center all contents inside each .flex-item (equal margin left & right)*/
+  /*use justify-content to center top & bottom*/
+  /*align-items & justify-content's function swap when contents change from verticle to horizontal & vice versa*/
+  text-align: center; /*center text, not the box of the text, box of text is already centered with align-items*/
+}
+
+.flex-item h4 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.flex-item p {
+  font-size: 1.25rem;
+}
+
+main { /*select main*/
+  padding-bottom: 10rem; /*set spacing between contents inside main and main's border to 10rem*/
+}
+
+main h2 a { /*select Sign up & log in link*/
+  color: black; /*change text color from blue to black*/
+  text-decoration: none; /*get rid of underline*/
+}
+
+main h2 a:hover { /*when mouse hovers over this link, this is called pseudo selector or pseudo class*/
+  color: #4e8c9b; /*change from black to teal when mouse hovers over this link*/
+}
+
+header li a { /*select Sign up Log in & Contact to undo hyperlink default color & underline*/
+  color: white;
+  text-decoration: none;
+}
+
+header li a:hover { /*select Sign up Log in & Contact to set mouse-hover function*/
+  color: #4e8c9b;
+}

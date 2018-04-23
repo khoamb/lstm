@@ -1,0 +1,56 @@
+<!doctype html> <!--to declare that it's using current html version-->
+<html> <!--this tag is to contain everything-->
+<head> <!--for meta data only, stuff we don't see on website-->
+  <title>Demand Forecasting</title> <!--title of the tab-->
+  <meta charset="utf-8" /> <!--to support special characters-->
+  <!--linking library for icons, stored online-->
+  <link rel="icon" href="images/icon.ico" type="image/x-icon"/> <!--link icon image for the tab of the browser-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/reset.css"/> <!--link this css file to reset html default style-->
+  <link rel="stylesheet" href="css/main.css"/> <!--link this main css file for styling-->
+</head>
+
+<body> <!--everything that display on the webpage, usually contains header, main , and footer-->
+  <header> <!--header = nav = div (container), usually the top banner of the webpage-->
+    <nav class="container flex"> <!--container 1, usually container of navagition bar, using container and flex classes for styling-->
+      <div class="flex name"> <!--container 1a, container for logo and name-->
+        <img src="images/logo.png"/> <!--insert logo image from local folder-->
+        <h3>Demand Forecasting</h3> <!--title name-->
+      </div>
+      <ul class="flex"> <!--container 1b, unordered list, container for menu-->
+        <li><a href="#">Sign Up</a></li> <!--list-->
+        <li><a href="#">Log In</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container"> <!--container 2, container for banner text, this goes all the way across the page-->
+      <div class="banner-text"> <!--container 2a, keep the text to the right side, declaring class here to apply style of this class-->
+        <h1>Predict web traffic using LSTM neural networks</h1> <!--h1 is biggest font, then h2, h3...then h6 is smallest, these fonts are bold, used for headings, use p or span for regular text-->
+        <a href="#">Get started</a> <!--text container as a link, # = placeholder for link, click on Get started will lead to this link-->
+      </div>
+    </div>
+  </header>
+
+  <main> <!--this tag is same as div-->
+    <h2><a href="#">Sign up</a> or <a href="#">log in</a> to:</h2>
+    <div class="container flex"> <!--box around all 3 inner boxes-->
+      <div class="flex-item flex">
+        <i class="far fa-keyboard fa-5x"></i> <!--far(fontawesome regular), imageName, size-->
+        <h4>Enter Data Set</h4>
+        <p>Enter a website's historical data set</p> <!--p(paragraph) vs span, p = word aligned, span = halfword aligned-->
+      </div>
+      <div class="flex-item flex">
+        <i class="fas fa-history fa-5x"></i>
+        <h4>View Previous Forecast</h4>
+        <p>View your history of previous forecasts</p>
+      </div>
+      <div class="flex-item flex">
+        <i class="fas fa-chart-line fa-5x"></i>
+        <h4>Get New Forecast</h4>
+        <p>Get a new forecast based on your data set</p>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
